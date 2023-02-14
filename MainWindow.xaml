@@ -1,0 +1,53 @@
+﻿<Window x:Class="HelloWPF.MainWindow"
+        x:Name="mainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWPF"
+        mc:Ignorable="d"
+        Height="400" 
+        Width="400"
+        Title ="Find the Answers"
+        ResizeMode="NoResize">
+
+    <Grid>
+        <TextBlock x:Name="DisplayText"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top" 
+                   FontSize="30"
+                   RenderTransformOrigin="0.497,-0.92" 
+                   Margin="0,125,0,0">
+
+        </TextBlock>
+
+        <Button HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                FontSize="20"
+                FontWeight="Bold"
+                Foreground="Red"
+                Background="Black"
+                Click="Button_Click"
+                Margin="0,229,0,0"
+                x:Name="askButton">
+            Ask
+        </Button>
+
+        <ComboBox x:Name="Proj"
+                      FontSize="15"
+                      Foreground="Red"
+                      Background="Black"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Top"
+                      Width="125"
+                      Height="28" 
+                      Margin="10,10,0,0">
+
+            <ComboBoxItem Content="Magic Conch" x:Name="MCItem"/>
+            <ComboBoxItem Content="Magic 8 Ball" x:Name="M8BItem"/>
+
+        </ComboBox>
+
+    </Grid>
+
+</Window>
